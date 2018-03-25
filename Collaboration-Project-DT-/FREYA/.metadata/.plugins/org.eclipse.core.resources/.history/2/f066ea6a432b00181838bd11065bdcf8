@@ -1,0 +1,5 @@
+package com.niit.Freya.daoimpl;
+
+public class ForumDAOImpl {
+
+}

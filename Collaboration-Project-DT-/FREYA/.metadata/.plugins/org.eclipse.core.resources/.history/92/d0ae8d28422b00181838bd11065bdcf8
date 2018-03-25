@@ -1,0 +1,23 @@
+package com.niit.Freya.dao;
+
+import java.util.List;
+
+import com.niit.Freya.model.Blog;
+
+public interface ForumDAO
+{
+public List<Forum> list();
+	
+	public Forum get(int BlogID);
+	
+	public boolean save(Blog blog);
+	
+	public boolean update(Blog blog);
+	
+	public boolean delete(Blog blog);
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,25 @@
+   package com.niit.FreyaBackend;
+
+
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.Freya.dao.BlogDAO;
+import com.niit.Freya.model.Blog;
+
+public class BlogTest {
+	@Autowired
+	private BlogDAO blogDAO;
+	@Autowired
+	private Blog blog;
+	@Test
+	public void testCreateUser() {
+		
+		blog.setBlogName("ABC");
+		assertEquals(true,blogDAO.save(blog));
+		
+	}
+}

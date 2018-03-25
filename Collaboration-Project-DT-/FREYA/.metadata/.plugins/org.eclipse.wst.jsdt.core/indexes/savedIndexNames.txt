@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+D:\FREYA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+970903558.index
+3929610045.index
+2602975663.index
+4202906021.index
+2960587765.index
+2269810758.index
+478908880.index
+56883714.index
+2330945695.index
+1963316157.index
+4249628995.index
+2593005259.index

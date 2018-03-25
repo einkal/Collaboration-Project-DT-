@@ -1,0 +1,13 @@
+127.0.0.1 - - [19/Mar/2018:12:49:25 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:49:26 +0530] "GET /FreyaFrontend/ HTTP/1.1" 200 1077
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:49:26 +0530] "GET /FreyaFrontend/Styles.css HTTP/1.1" 200 407
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:49:26 +0530] "GET /FreyaFrontend/js/app.js HTTP/1.1" 200 455
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:49:27 +0530] "GET /FreyaFrontend/templates/home.html HTTP/1.1" 200 83
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:36 +0530] "GET /FreyaFrontend/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:36 +0530] "GET /FreyaFrontend/Styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:36 +0530] "GET /FreyaFrontend/js/app.js HTTP/1.1" 200 452
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:36 +0530] "GET /FreyaFrontend/templates/home.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:39 +0530] "GET /FreyaFrontend/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:39 +0530] "GET /FreyaFrontend/Styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:39 +0530] "GET /FreyaFrontend/js/app.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Mar/2018:12:52:39 +0530] "GET /FreyaFrontend/templates/home.html HTTP/1.1" 304 -

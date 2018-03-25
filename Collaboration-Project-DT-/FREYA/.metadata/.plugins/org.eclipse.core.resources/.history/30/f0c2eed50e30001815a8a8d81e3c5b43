@@ -1,0 +1,25 @@
+var app = angular.module("myApp", ["ngRoute"]);
+
+app.config(function($routeProvider) {
+  $routeProvider
+   .when("/", {
+	    templateUrl :"templates/home.html"	   
+	  })
+  .when("/Blog", {
+    templateUrl : "/templates/blog.html"
+   
+  })
+
+  .when("Friend", {
+    templateUrl : "templates/friend.html"
+   
+  })
+  
+   .when("/Job", {
+    templateUrl : "templates/job.html"
+   
+  })
+
+  .otherwise({redirectTo: "/"});
+});
+

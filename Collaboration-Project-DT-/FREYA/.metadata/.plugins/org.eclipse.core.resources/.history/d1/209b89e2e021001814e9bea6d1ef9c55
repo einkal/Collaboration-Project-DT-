@@ -1,0 +1,13 @@
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+	console.log("in config");
+    $routeProvider
+    .when("/",{
+        templateUrl:"index.jsp"
+    })
+    .when("/login",{
+        templateUrl:"templates/Login.jsp"
+    })
+    .when("/register",{templateUrl:"templates/Registration.jsp"
+    });
+});

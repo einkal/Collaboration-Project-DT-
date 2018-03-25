@@ -1,0 +1,31 @@
+   package com.niit.FreyaBackend;
+
+
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.niit.Freya.config.AppContextConfig;
+import com.niit.Freya.dao.BlogDAO;
+import com.niit.Freya.model.Blog;
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes=AppContextConfig.class)
+public class BlogTest {
+	@Autowired 
+	private BlogDAO blogDAO;
+	@Autowired
+	private Blog blog;
+	@Test
+	public void testCreateBlog()
+	{
+		blog.setBlogID(1);
+		blog.setBlogName("ABC");
+		assertEquals(true,blogDAO.save(blog));
+		
+	}
+}

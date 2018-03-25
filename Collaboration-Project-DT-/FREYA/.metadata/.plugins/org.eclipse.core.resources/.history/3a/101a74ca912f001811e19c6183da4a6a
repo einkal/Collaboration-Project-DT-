@@ -1,0 +1,15 @@
+@Configuration
+@EnableWebMvc
+@ComponentScan("com.niit")
+public class WebResolver 
+{
+	@Bean
+	public InternalResourceViewResolver getViewResolver()
+	{
+		System.out.println("Resolver Called");
+		InternalResourceViewResolver iRVResolver=new InternalResourceViewResolver();
+		iRVResolver.setPrefix("/WEB-INF/jsp");
+		iRVResolver.setSuffix(".jsp");
+		return iRVResolver;
+	}
+}

@@ -1,0 +1,23 @@
+<div>
+Welcome to Blog Management
+<form id="blogform" method="post">
+<table align="center""width="80%" border="1">
+<tr>
+	<td>Blog Name </td>
+	<td><input type="text" name="blogName" ng-model="blog.blogName"/></td>
+	</tr>
+	<tr>
+	<td>Blog Content </td>
+	<td> <textarea cols="30" row="10" name="blogContent" ng-model="blog.blogContent"></textarea></td>
+	</tr>
+	<tr>
+	<td colspan="2"><center"><input type="submit""value="Inser Blog"></center></td>
+</tr>
+
+
+</table>
+
+
+</form>
+</div>
+

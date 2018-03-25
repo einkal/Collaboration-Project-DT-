@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<body ng-app="myApp">
+
+<p><a href="#/home">Home</a>|
+<a href="#/register">Register</a>|
+<a href="#/login">Login</a>
+
+
+<div ng-view></div>
+
+<script type="text/javascript">
+
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+	console.log("in config");
+    $routeProvider
+    .when("/",{
+        templateUrl:"index.jsp"
+    })
+    .when("#/login",{
+        templateUrl:"templates/Login.jsp"
+    })
+    .when("#/register",{templateUrl:"templates/Registration.jsp"
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="FreyaMiddleWare"/>
+<aop-project name="amkart-frontend"/>
+<aop-project name="amkart-backend"/>
+</aop-reference-model>

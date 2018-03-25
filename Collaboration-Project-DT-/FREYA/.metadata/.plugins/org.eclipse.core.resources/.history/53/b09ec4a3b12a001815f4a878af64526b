@@ -1,0 +1,46 @@
+package com.niit.Freya.daoimpl;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.niit.Freya.dao.BlogDAO;
+import com.niit.Freya.model.Blog;
+
+@Repository("blogDAO")
+@Transactional
+public class BlogDAOImpl implements BlogDAO {
+
+	@Autowired 
+	BlogDAO blogDAO;
+	@Autowired
+	private SessionFactory sessionFactory;
+	public List<Blog> list() {
+		return sessionFactory.getCurrentSession().createQuery("from Blog").list();
+		
+	}
+
+	public Blog get(int blogID) {
+		return (Blog)sessionFactory.getCurrentSession().createQuery("from User where blogID='"+blogID+"'").uniqueResult();
+	}
+
+	public boolean save(Blog blog) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean update(Blog blog) {
+		sessionFactory.getCurrentSession().update(blog);
+		return true;
+	}
+
+	public boolean delete(Blog blog) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

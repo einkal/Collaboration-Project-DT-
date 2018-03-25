@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Mar/2018:23:07:58 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:08:00 +0530] "GET /FreyaMiddleWare/ HTTP/1.1" 200 57
+127.0.0.1 - - [22/Mar/2018:23:24:10 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:24:11 +0530] "GET /FreyaFrontend/ HTTP/1.1" 200 1077
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:24:11 +0530] "GET /FreyaFrontend/Styles.css HTTP/1.1" 200 407
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:24:11 +0530] "GET /FreyaFrontend/js/app.js HTTP/1.1" 200 455
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:24:12 +0530] "GET /FreyaFrontend/templates/home.html HTTP/1.1" 200 83
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:24:28 +0530] "GET /FreyaMiddleWare/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:25:05 +0530] "GET /FreyaMiddleWare/listBlogs HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:25:37 +0530] "GET /FreyaMiddleWare/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:26:00 +0530] "GET /FreyaMiddleWare/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:23:26:08 +0530] "GET /FreyaMiddleWare/listBlogs HTTP/1.1" 404 1047

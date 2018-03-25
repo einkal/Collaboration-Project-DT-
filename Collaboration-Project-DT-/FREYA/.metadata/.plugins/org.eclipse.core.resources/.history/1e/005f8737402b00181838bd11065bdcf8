@@ -1,0 +1,19 @@
+package com.niit.Freya.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+@Entity
+@Table(name="FORUM")
+@Component
+public class Forum
+{
+	
+	int forumId;
+	String forumName;
+	String forumContent;
+	java.util.Date createDate;
+	String username;
+	String status;
+}

@@ -1,0 +1,29 @@
+
+var app = angular.module('myApp', ['ngRoute']);
+
+app.config(function($routeProvider) {
+  $routeProvider
+  console.log("in config");
+  .when('/', {
+    templateUrl : 'templates/home.html'
+   
+  })
+
+  .when('/blog', {
+    templateUrl : 'templates/blog.html'
+   
+  })
+
+  .when('/friend', {
+    templateUrl : 'templates/friend.html'
+   
+  })
+  
+   .when('/job', {
+    templateUrl : 'templates/job.html'
+   
+  })
+
+  .otherwise({redirectTo: '/'});
+});
+
