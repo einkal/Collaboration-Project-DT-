@@ -1,4 +1,4 @@
-<div ng-controller="BlogController">
+<div ng-controller="BlogController" ng-app="myApp">
 Welcome to Blog Management
 <form id="blogform" method="post">
 <table align="center""width="80%" border="1">
@@ -11,12 +11,27 @@ Welcome to Blog Management
 	<td> <textarea cols="30" row="10" name="blogContent" ng-model="blog.blogContent"></textarea></td>
 	</tr>
 	<tr>
-	<td colspan="2"><center"><input type="submit""value="Insert Blog" ng-model="blog"></center></td>
+	<td colspan="2"><center"><input type="submit""value="Insert Blog" ng-click="insertBlog()"></center></td>
 </tr>
 
 
 </table>
-
+<table align="centre">
+	<tr>
+		<td>Blog Name</td>
+		<td>Blog Content</td>
+		<td>Likes</td>
+		<td>Operation</td>
+		</tr>
+		<tr ng-repeat="blog in blogdata">
+			<td>{{blog.blogName}}</td>
+			<td>{{blog.blogComment}}</td>
+			<td>{{blog.likes}}<input type="submit" value="like" ng-click="incrementLikes(blog.blogID)"/></td>
+			<td>
+				<input type="submit" value="Delete" ng-click="deleteBlog(blog.blogID)"/>
+				<input type="submit" value="Edit" ng-click="UpdateBlog(blog.blogID)"/>
+			</td>							
+</table>
 
 </form>
 </div>

@@ -13,8 +13,13 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.Freya.model.ApplyJob;
 import com.niit.Freya.model.Blog;
+import com.niit.Freya.model.BlogComment;
 import com.niit.Freya.model.Forum;
+import com.niit.Freya.model.ForumComment;
+import com.niit.Freya.model.Job;
+import com.niit.Freya.model.UserDetail;
 
 
 @Configuration
@@ -50,6 +55,14 @@ public class AppContextConfig {
 		LocalSessionFactoryBuilder sessionFactory=new LocalSessionFactoryBuilder(dataSource);
 		sessionFactory.addAnnotatedClass(Blog.class);
 		sessionFactory.addAnnotatedClasses(Forum.class);
+		sessionFactory.addAnnotatedClasses(Job.class);
+		sessionFactory.addAnnotatedClasses(UserDetail.class);
+		sessionFactory.addAnnotatedClasses(ForumComment.class);
+		sessionFactory.addAnnotatedClasses(BlogComment.class);
+		sessionFactory.addAnnotatedClasses(ApplyJob.class);
+
+
+
 		sessionFactory.addProperties(getHibernateProperties());
 		return sessionFactory.buildSessionFactory();
 	}

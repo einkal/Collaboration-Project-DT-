@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -28,7 +29,7 @@ public class BlogController {
 	
 	@GetMapping(value="/listBlogs")
 	public ResponseEntity<List<Blog>> getListBlogs(){
-		 List<Blog> listBlogs=blogDAO.list("Amrita");
+		 List<Blog> listBlogs=blogDAO.list("Travera");
 		 return new ResponseEntity<List<Blog>>(listBlogs,HttpStatus.OK);
 		
 	}
@@ -47,6 +48,34 @@ public class BlogController {
 		{
 			return new ResponseEntity<String>("Failure",HttpStatus.NOT_FOUND);
 		}
+	}
+	@GetMapping(value="/deleteBlog/{blogID}")
+	public ResponseEntity<String> deleteBlog(@PathVariable("blogID")int blogID)
+	{
+		Blog blog=blogDAO.getBlog(blogID);
+		if(blogDAO.delete(blog))
+		{
+			return new ResponseEntity<String>("Success",HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<String>("Failure",HttpStatus.NOT_FOUND);
+		}
+	
+	}
+	@GetMapping(value="/incrementLikes/{blogID}")
+	public ResponseEntity<String> incrementLikes(@PathVariable("blogID")int blogID)
+	{
+		Blog blog=blogDAO.getBlog(blogID);
+		if(blogDAO.incrementLikes(blog))
+		{
+			return new ResponseEntity<String>("Success",HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<String>("Failure",HttpStatus.NOT_FOUND);
+		}
+	
 	}
 
 }

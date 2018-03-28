@@ -26,7 +26,7 @@ public class BlogDAOImpl implements BlogDAO {
 	}
 
 	public Blog getBlog(int blogID) {
-		return (Blog)sessionFactory.getCurrentSession().createQuery("from User where blogID="+blogID).uniqueResult();
+		return (Blog)sessionFactory.getCurrentSession().createQuery("from Blog where blogID="+blogID).uniqueResult();
 	}
 
 	public boolean add(Blog blog) {
@@ -58,6 +58,15 @@ public class BlogDAOImpl implements BlogDAO {
 		blog.setStatus("A");
 		sessionFactory.getCurrentSession().update(blog);
 		return true;
+	}
+
+	@Override
+	public boolean incrementLikes(Blog blog) {
+		System.out.println("increment daoimpl");
+		blog.setLikes(blog.getLikes()+1);
+		sessionFactory.getCurrentSession().update(blog);
+		return true;
+	
 	}
 
 }

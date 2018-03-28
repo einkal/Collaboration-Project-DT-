@@ -1,1 +1,3 @@
+com\niit\freyamiddleware\config\WebInitializer.class
 com\niit\freyamiddleware\restControllers\BlogController.class
+com\niit\freyamiddleware\config\WebResolver.class

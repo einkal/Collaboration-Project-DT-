@@ -20,4 +20,5 @@ public List<Blog> list(String userName);
 	public boolean update(Blog blog);
 	
 	public boolean delete(Blog blog);
+	public boolean incrementLikes(Blog blog);
 }

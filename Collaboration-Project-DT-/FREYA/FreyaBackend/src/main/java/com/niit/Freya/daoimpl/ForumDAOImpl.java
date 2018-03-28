@@ -1,4 +1,4 @@
-package com.niit.Freya.daoimpl;
+/*package com.niit.Freya.daoimpl;
 
 import java.util.List;
 
@@ -47,4 +47,35 @@ public class ForumDAOImpl implements ForumDAO{
 		return true;
 	}
 
+	@Override
+	public List<Forum> list(String userName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Forum getForum(int ForumID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean add(Forum forum) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean approve(Forum forum) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean reject(Forum forum) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
+*/
