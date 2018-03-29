@@ -3,6 +3,7 @@ package com.niit.Freya.dao;
 import java.util.List;
 
 import com.niit.Freya.model.Forum;
+import com.niit.Freya.model.ForumComment;
 import com.niit.Freya.model.Forum;
 
 public interface ForumDAO
@@ -21,5 +22,11 @@ public List<Forum> list(String userName);
 	
 	public boolean delete(Forum forum);
 	
-	
+	public boolean addForumComment(ForumComment forumComment);
+
+	public boolean deleteForumComment(ForumComment forumComment);
+
+	public ForumComment getForumComment(int commentID);
+
+	public List<ForumComment> listForumComments(int forumID);
 }

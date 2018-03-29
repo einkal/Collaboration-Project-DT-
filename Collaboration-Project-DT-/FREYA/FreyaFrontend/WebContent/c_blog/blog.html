@@ -25,7 +25,7 @@ Welcome to Blog Management
 		</tr>
 		<tr ng-repeat="blog in blogdata">
 			<td>{{blog.blogName}}</td>
-			<td>{{blog.blogComment}}</td>
+			<td>{{blog.blogContent}}</td>
 			<td>{{blog.likes}}<input type="submit" value="like" ng-click="incrementLikes(blog.blogID)"/></td>
 			<td>
 				<input type="submit" value="Delete" ng-click="deleteBlog(blog.blogID)"/>
