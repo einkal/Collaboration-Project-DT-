@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
+
 <div ng-controller="BlogController" ng-app="myApp">
 Welcome to Blog Management
 <form id="blogform" method="post">
@@ -11,7 +15,7 @@ Welcome to Blog Management
 	<td> <textarea cols="30" row="10" name="blogContent" ng-model="blog.blogContent"></textarea></td>
 	</tr>
 	<tr>
-	<td colspan="2"><center"><input type="submit""value="Insert Blog" ng-click="insertBlog()"></center></td>
+	<td colspan="2"><center"><input type="submit" value="Insert Blog" ng-click="insertBlog()"></center></td>
 </tr>
 
 

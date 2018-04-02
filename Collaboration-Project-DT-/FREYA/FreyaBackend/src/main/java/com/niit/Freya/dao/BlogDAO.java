@@ -3,6 +3,7 @@ package com.niit.Freya.dao;
 import java.util.List;
 
 import com.niit.Freya.model.Blog;
+import com.niit.Freya.model.BlogComment;
 
 
 public interface BlogDAO
@@ -21,4 +22,13 @@ public List<Blog> list(String userName);
 	
 	public boolean delete(Blog blog);
 	public boolean incrementLikes(Blog blog);
+
+	boolean addBlogComment(BlogComment blogComment);
+
+	boolean deleteBlogComment(BlogComment blogComment);
+
+	BlogComment getBlogComment(int commentId);
+
+	List<BlogComment> listBlogComments(int blogID);
+
 }

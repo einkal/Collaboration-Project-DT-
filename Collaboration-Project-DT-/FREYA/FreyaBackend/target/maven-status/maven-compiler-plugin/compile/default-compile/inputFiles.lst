@@ -1,4 +1,5 @@
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\config\AppContextConfig.java
+D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\daoimpl\ProfileUpdateDAOImpl.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\dao\BlogDAO.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\ForumComment.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\App.java
@@ -6,11 +7,13 @@ D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\daoimpl\ForumDAOImpl.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\daoimpl\JobDAOImpl.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\Blog.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\Job.java
+D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\dao\ProfileUpdateDAO.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\daoimpl\UserDetailImpl.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\BlogComment.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\dao\ForumDAO.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\dao\UserDetailDAO.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\daoimpl\BlogDAOImpl.java
+D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\ProfilePicture.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\Forum.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\UserDetail.java
 D:\FREYA\FreyaBackend\src\main\java\com\niit\Freya\model\ApplyJob.java

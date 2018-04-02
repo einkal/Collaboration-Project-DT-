@@ -19,6 +19,7 @@ import com.niit.Freya.model.BlogComment;
 import com.niit.Freya.model.Forum;
 import com.niit.Freya.model.ForumComment;
 import com.niit.Freya.model.Job;
+import com.niit.Freya.model.ProfilePicture;
 import com.niit.Freya.model.UserDetail;
 
 
@@ -60,6 +61,7 @@ public class AppContextConfig {
 		sessionFactory.addAnnotatedClasses(ForumComment.class);
 		sessionFactory.addAnnotatedClasses(BlogComment.class);
 		sessionFactory.addAnnotatedClasses(ApplyJob.class);
+		sessionFactory.addAnnotatedClasses(ProfilePicture.class);
 
 
 

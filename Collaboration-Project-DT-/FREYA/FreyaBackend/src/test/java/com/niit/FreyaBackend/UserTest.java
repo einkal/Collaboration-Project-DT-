@@ -38,11 +38,19 @@ public class UserTest
 		assertEquals(true,userDetailDAO.registerUser(userDetail));
 
 	}
-	@Test
+	@Ignore
 	public void updateOnlineStatusTest()
 	{
 		userDetail=userDetailDAO.getUserDetail("Amrita");
 		assertTrue("Problem in updating",userDetailDAO.updateOnlineStatus("Y",userDetail));
 	}
-
+	@Test
+	public void checkUserTest()
+	{
+		UserDetail userDetail=new UserDetail();
+		userDetail.setUserName("Amrita");
+		userDetail.setPassword("pass123");
+		
+		assertEquals(true,userDetailDAO.checkLogin(userDetail));	
+	}
 }

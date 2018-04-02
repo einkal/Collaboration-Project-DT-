@@ -3,12 +3,10 @@ package com.niit.Freya.daoimpl;
 import java.util.List;
 
 import javax.transaction.Transactional;
-
-import org.hibernate.Query;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import com.niit.Freya.dao.BlogDAO;
 import com.niit.Freya.dao.UserDetailDAO;
 import com.niit.Freya.model.Blog;
@@ -61,7 +59,10 @@ public class UserDetailImpl implements UserDetailDAO{
 	@Override
 	public boolean checkLogin(UserDetail userDetail) {
 		
-		Query query=(Query) sessionFactory.getCurrentSession().createQuery("from UserDetail where userName='"+userDetail.getUserName()+"' and password='"+userDetail.getPassword()+"'").uniqueResult();
+	Query query=(Query) sessionFactory.getCurrentSession().createQuery("from UserDetail where userName=:userName and password=:password");
+	query.setParameter("userName",userDetail.getUserName());
+	query.setParameter("password",userDetail.getPassword());
+
 		UserDetail userDetail1=(UserDetail)query.list().get(0);
 		if(userDetail1==null)
 			return false;

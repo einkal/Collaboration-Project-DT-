@@ -4,12 +4,15 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.niit.Freya.dao.BlogDAO;
 import com.niit.Freya.model.Blog;
+import com.niit.Freya.model.BlogComment;
 
 @Repository("blogDAO")
 @Transactional
@@ -68,5 +71,75 @@ public class BlogDAOImpl implements BlogDAO {
 		return true;
 	
 	}
+	@Override
 
+	@Transactional
+
+	public boolean addBlogComment(BlogComment blogComment) {
+
+
+
+			sessionFactory.getCurrentSession().save(blogComment);
+
+			return true;
+
+		
+	}
+
+
+
+	@Override
+
+	@Transactional
+
+	public boolean deleteBlogComment(BlogComment blogComment) {
+
+		
+
+			sessionFactory.getCurrentSession().delete(blogComment);
+
+			return true;
+
+		
+
+	}
+
+
+
+	@Override
+
+	@Transactional
+
+	public BlogComment getBlogComment(int commentID) {
+
+
+			Session session = sessionFactory.openSession();
+
+			return (BlogComment)sessionFactory.getCurrentSession().createQuery("from BlogComment where commentID="+commentID).uniqueResult();
+
+
+
+	}
+
+
+
+	@Override
+
+	@Transactional
+
+	public List<BlogComment> listBlogComments(int blogID) {
+
+		Session session=sessionFactory.openSession();
+
+		Query query=session.createQuery("from BlogComment where blogID=:blogID");
+
+		query.setParameter("blogID", new Integer(blogID));
+
+		@SuppressWarnings("unchecked")
+
+		List<BlogComment> listBlogComments=query.list();
+
+		return listBlogComments;
+
+	}
 }

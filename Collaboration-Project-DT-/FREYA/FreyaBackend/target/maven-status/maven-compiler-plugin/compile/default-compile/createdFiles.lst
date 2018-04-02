@@ -1,0 +1,17 @@
+com\niit\Freya\dao\BlogDAO.class
+com\niit\Freya\dao\UserDetailDAO.class
+com\niit\Freya\daoimpl\ForumDAOImpl.class
+com\niit\Freya\model\BlogComment.class
+com\niit\Freya\model\Forum.class
+com\niit\Freya\model\ForumComment.class
+com\niit\Freya\model\ApplyJob.class
+com\niit\Freya\daoimpl\BlogDAOImpl.class
+com\niit\Freya\model\Job.class
+com\niit\Freya\App.class
+com\niit\Freya\model\Blog.class
+com\niit\Freya\daoimpl\UserDetailImpl.class
+com\niit\Freya\config\AppContextConfig.class
+com\niit\Freya\daoimpl\JobDAOImpl.class
+com\niit\Freya\dao\ForumDAO.class
+com\niit\Freya\dao\JobDAO.class
+com\niit\Freya\model\UserDetail.class
